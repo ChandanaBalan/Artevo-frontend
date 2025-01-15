@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function HeaderLanding() {
     return (
@@ -7,10 +8,10 @@ function HeaderLanding() {
                 <div className="col-md-2"></div>
                 <div className="col-md-8 container-fluid">
                     <div className='d-flex justify-content-between align-items-center mt-4'>
-                        <h1 style={{ fontFamily: "Livvic" }}><i>Artevo</i></h1>
+                        <Link to={'/'} style={{textDecoration:"none"}}><h1 style={{ fontFamily: "Livvic", color:"#004d00"}}><i>Artevo</i></h1></Link>
                         <div>
-                            <button className='btn btn-success me-4'>Join as Teacher</button>
-                            <button className='btn border'>Start Learning</button>
+                            <Link to={'/Auth'} ><button className='btn btn-success me-4'>Join as Teacher</button></Link>
+                            <Link to={'/Auth'} ><button className='btn border'>Start Learning</button></Link>
                         </div>
                     </div>
                    

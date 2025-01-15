@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderLanding from '../components/HeaderLanding'
 import './landing.css'
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 
 function Landing() {
@@ -10,8 +11,8 @@ function Landing() {
       <HeaderLanding />
       <div className="row container-fluid">
         <div className="col-md-2"></div>
-        <div className="col-md-8 container-fluid mx-2" style={{ backgroundColor: "green", height: "50vh", borderRadius: "50px" }}>
-          <div>
+        <div className="col-md-8 container-fluid mx-2" >
+          <div style={{backgroundColor: "#004d00",height: "50vh", borderRadius: "50px" }}>
             <h1 style={{ fontWeight: "600", fontSize: "4vw", color: "white" }} className='p-5 text-center mt-2 '>Elevating <span style={{ fontWeight: "300" }}><i>artistic</i></span> excellence through learning and teaching.</h1>
 
             <div className='d-flex justify-content-center '>
@@ -45,7 +46,7 @@ function Landing() {
                   </Card>
                 </div>
                 <div className="col-md-3 mt-md-0 mt-3">
-                  <Card style={{ width: '100%', backgroundColor: "#004d00" }}>
+                  <Card style={{ width: '100%', backgroundColor: "#660029" }}>
                     <Card.Body>
                       <Card.Title className='text-center' style={{ fontSize: "30px", color: "white" }}>Dancing</Card.Title>
                     </Card.Body>
@@ -70,12 +71,17 @@ function Landing() {
                   </Card>
                 </div>
               </div>
+
+              <div className=' d-flex justify-content-center align-items-center mt-5'>
+                <Link to={'/Auth'}><button className='btn btn-dark'>Get more...</button></Link>
+                </div>
+             
             </div>
           </div>
 
 
           <div>
-            <div className='border border-2 p-5 mt-5'>
+            <div className='border border-2 p-5 my-5'>
               <div className='row'>
                 <div className='col-md-8'>
                   <h2 className='pt-5 px-5'>Step into a <span style={{ fontWeight: "300", color: "green" }}><i>world of creativity</i></span> where you can teach and learn art like never before!
